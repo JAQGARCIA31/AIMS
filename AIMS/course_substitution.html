@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="resources/materialize/css/materialize.css"  media="screen,projection"/>
+      <!-- Import styles from resource folder -->
+      <link rel="stylesheet" href="resources/styles.css" type="text/css" media="screen,projection"/>
+       <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="./js/vue.js"></script>
+      <title>AIMS</title>
+      <style>
+        header, .main, footer {
+          padding-left:300px;
+        }
+        @media only screen and (max-width: 992px){
+          header, .main, footer {
+            padding-left: 0;
+          }
+        }
+      </style>
+      <link rel="shortcut icon" href="images/neu_logo.png">
+      <!--Let browser know website is optimized for mobilSe-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+    <!--Side Navigation-->
+        <div class="sidenav-content-container">
+        <ul id="slide-out" class="sidenav sidenav-fixed sidenav-content-container">
+          <li><div class="user-view">
+            <div class="background"></div>
+            <div class="prof-img-container"></div>
+              <img class="prof-img" src="images/prof-icon.png"/>
+            </div>
+            <div class="profile-name">Danica Antido</div>
+            <li style="margin-top: 20px;"><a class="waves-effect white-text" href="#!"><i class="material-icons white-text">dashboard</i>Dashboard</a></li>
+            <li><a class="waves-effect white-text" href="#!"><i class="material-icons white-text">notifications</i>Notifications</a></li>
+              <li class="no-padding">
+                <ul class="collapsible">
+                  <li> <a class="collapsible-header waves-effect white-text active">Course<i class="course material-icons white-text">class</i></a>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li><a class="waves-effect white-text" href="course_crediting.html">Course Crediting</a></li>
+                        <li><a class="waves-effect white-text active" href="course_substitution.html">Course Substitution</a></li>
+                        <li><a class="waves-effect white-text" href="course_overload.html">Request for Overload</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li><a class="waves-effect white-text" href="program.html"><i class="material-icons white-text">description</i>Program</a>
+            </li>
+            </ul>  
+            </div>
+
+    <!--Header Content-->  
+        <div class="sidenav-content">
+          <h4 class="no-margin-bottom bold">Hi Antido!</h4>
+          <h6 class="aims-text-blue no-margin-top text-apart">COLLEGE OF COMPUTER STUDIES</h6>
+          <br/>
+          <div class="row no-margin">
+            <div class="col s2 no-padding bold">Student ID:</div>
+            <div class="col s10 no-padding">17-12345-678</div>
+          </div>
+          <div class="row no-margin">
+            <div class="col s2 no-padding bold">Program:</div>
+            <div class="col s10 no-padding">Bachelor of Science in Information Technology</div>
+          </div>
+          <div class="row no-margin">
+            <div class="col s2 no-padding bold">Year Level:</div>
+            <div class="col s10 no-padding">4th Year</div>
+          </div>
+          <div class="row no-margin">
+            <div class="col s2 no-padding bold">Academic Year:</div>
+            <div class="col s10 no-padding">1st Semester of 2019-2020</div>
+          </div>
+          <br/>
+          <hr class="light-blue"/>
+          <br/>
+
+    <!--Data Entry in Course Subsitution-->
+          <div class="aims-h1">
+            Course Substitution
+          </div>
+        <br/>
+        
+        <div class="row no-margin-bottom">
+            <div class="col s5 l2 input-field">
+                <input type="text" id="Course_ID"class="validate" placeholder="Course ID" autocomplete="off">
+                <label for="Course_ID">Required Course/s</label>
+            </div>
+            <div class="col s5 l1 input-field">
+              <input type="text" id="units" class="validate" autocomplete="off">
+              <label for=units>Units</label>
+            </div>
+             <div class="col s5 l3 input-field">
+              <i class="material-icons prefix aims-btn">swap_horiz</i>
+              <input type="text" id="Course_ID"class="validate" placeholder="Course ID" autocomplete="off">
+              <label for="Course_ID">Course/s Substitute</label>
+             </div> 
+            <div class="col s5 l2 input-field">
+                <input type="text" id="Course_description" class="validate" autocomplete="off">
+                <label for="Course_description">Course Description</label>
+            </div>
+            <div class="col s5 l1 input-field">
+                <input type="text" id="Units" class="validate" autocomplete="off">
+                <label for=Units>Units</label>
+            </div> 
+            <div class="col s5 l1 input-field">
+                <input type="text" id="Grade" class="validate" autocomplete="off">
+                <label for="Grade">Grade</label>
+            </div> 
+            
+    <!--Data Entry 2-->
+        <div class="row-data-2 no-margin-bottom">
+            <div class="col s5 l2 input-field">
+                <input type="text" id="Course_ID"class="validate" placeholder="Course ID" autocomplete="off">
+                <label for="Course_ID">Required Course/s</label>
+            </div>
+            <div class="col s5 l1 input-field">
+              <input type="text" id="units" class="validate" autocomplete="off">
+              <label for=units>Units</label>
+            </div>
+             <div class="col s5 l3 input-field">
+              <i class="material-icons prefix aims-btn">swap_horiz</i>
+              <input type="text" id="Course_ID"class="validate" placeholder="Course ID" autocomplete="off">
+              <label for="Course_ID">Course/s Substitute</label>
+             </div> 
+            <div class="col s5 l2 input-field">
+                <input type="text" id="Course_description" class="validate" autocomplete="off">
+                <label for="Course_description">Course Description</label>
+            </div>
+            <div class="col s5 l1 input-field">
+                <input type="text" id="Units" class="validate" autocomplete="off">
+                <label for=Units>Units</label>
+            </div> 
+            <div class="col s5 l1 input-field">
+                <input type="text" id="Grade" class="validate" autocomplete="off">
+                <label for="Grade">Grade</label>
+            </div> 
+    <!--Add Data Entry Button-->
+            <div class="col s2 add-btn">
+              <a class="btn-floating btn-small waves-effect waves-light blue darken-4"><i class="material-icons">add</i></a>
+            </div>
+          </div>
+
+    <!--Submit and Total Units-->
+                <div>
+                  <div class="col s5 l10">
+                    <label for="Total_units:">Total Units:</label>
+                    <button class="btn waves-effect waves-light blue darken-4 submit-btn" type="submit" name="action">SUBMIT
+                      <i class="material-icons right">send</i>
+                    </button>
+                  </div>
+                </div>
+
+    <!--Search Button-->
+        <div class="search-containter">
+            <div class="topright">
+            <div class="row no-margin-bottom">
+              <form class="col s12">
+                <div class="row no-margin-bottom">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix aims-btn">search</i>
+                    <input id="icon_prefix" type="text" class="validate" autocomplete="off">
+                    <label for="icon_prefix">Search</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            </div>
+          </div>
+
+      <!--<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>-->
+              
+
+      <!--JQuery-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <!--Materialize JS-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>   
+      <!--<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>-->
+      <!--<script type="text/javascript" src="resources/materialize/js/materialize.min.js"></script>-->
+      <script>
+          $(document).ready(function(){
+            $('.collapsible').collapsible();
+          });
+      </script>
+
+  </body>
+  </html>

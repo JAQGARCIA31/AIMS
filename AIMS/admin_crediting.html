@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="resources/materialize/css/materialize.css"  media="screen,projection"/>
+      <!-- Import styles from resource folder -->
+      <link rel="stylesheet" href="resources/styles.css" type="text/css" media="screen,projection"/>
+       <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="./js/vue.js"></script>
+      <title>AIMS</title>
+      <style>
+        header, .main, footer {
+          padding-left:300px;
+        }
+        @media only screen and (max-width: 992px){
+          header, .main, footer {
+            padding-left: 0;
+          }
+        }
+        body {
+          background-color: #3B3838;
+        }
+      </style>
+      <link rel="shortcut icon" href="images/neu_logo.png">
+      <!--Let browser know website is optimized for mobilSe-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+    <!--Side Navigation-->
+        <div class="sidenav-content-container">
+        <ul id="slide-out" class="sidenav sidenav-fixed">
+          <li><div class="user-view">
+            <div class="background"></div>
+            <div class="prof-img-container"></div>
+              <img class="prof-img" src="images/prof-icon.png"/>
+            </div>
+            <div class="profile-name">College Dean</div>
+            <li style="margin-top: 20px;"><a class="waves-effect white-text" href="#!"><i class="material-icons white-text">dashboard</i>Dashboard</a></li>
+            <li><a class="waves-effect white-text" href="#!"><i class="material-icons white-text">notifications</i>Notifications</a></li>
+              <li class="no-padding">
+                <ul class="collapsible">
+                  <li> <a class="collapsible-header waves-effect white-text active">Course<i class="course material-icons white-text">class</i></a>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li><a class="waves-effect white-text active" href="admin_crediting.html">Course Crediting</a></li>
+                        <li><a class="waves-effect white-text" href="admin_substitution.html">Course Substitution</a></li>
+                        <li><a class="waves-effect white-text" href="admin_overload">Request for Overload</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li><a class="waves-effect white-text" href="admin_program.html"><i class="material-icons white-text">description</i>Program</a>
+            </li>
+            </ul> 
+            </div> 
+
+    <!--Header Content-->  
+        <div class="admin-content">
+          <h5 class="bold white-text no-margin-bottom">Course Crediting</h5>
+            <div class="schoolyear-term">
+            <h7>1st Semester AY 2019-2020</h7>
+            </div>
+            <div>
+              <table class="highlight">
+              <thead class="table-style">
+                <tr>
+                    <th>Student ID</th>
+                    <th>Student Name</th>
+                    <th>Program</th>
+                    <th>Yr. Level</th>
+                    <th>Date Filled</th>
+                    <th>Status</th>
+                </tr>
+              </thead>
+              <tbody class=tbody-style>
+                <tr>
+                  <td class="yellow-gold">17-12345-678</td>
+                  <td>Antido, Danica R.</td>
+                  <td>BSIT</td>
+                  <td>4th Year</td>
+                  <td>01/01/2020</td>
+                  <td class="yellow-gold">Pending</td>
+                </tr>
+                <tr>
+                  <td class="yellow-gold">17-12345-678</td>
+                  <td>Antido, Danica R.</td>
+                  <td>BSIT</td>
+                  <td>4th Year</td>
+                  <td>01/01/2020</td>
+                  <td class="yellow-gold">Pending</td>
+                </tr>
+                <tr>
+                  <td class="yellow-gold">17-12345-678</td>
+                  <td>Antido, Danica R.</td>
+                  <td>BSIT</td>
+                  <td>4th Year</td>
+                  <td>01/01/2020</td>
+                  <td class="yellow-gold">Pending</td>
+                </tr>
+                <tr>
+                  <td class="yellow-gold">17-12345-678</td>
+                  <td>Antido, Danica R.</td>
+                  <td>BSIT</td>
+                  <td>4th Year</td>
+                  <td>01/01/2020</td>
+                  <td class="yellow-gold">Pending</td>
+                </tr>
+              </tbody>
+              </table>
+
+            </div>
+        
+
+
+        </div>
+    <!--Search Button-->
+        <div class="search-containter">
+            <div class="topright">
+            <div class="row no-margin-bottom">
+              <form class="col s12">
+                <div class="row no-margin-bottom">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix white-text">search</i>
+                    <input id="icon_prefix" type="text" class="validate" autocomplete="off">
+                    <label for="icon_prefix">Search</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            </div>
+          </div>
+
+      <!--<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>-->
+              
+
+      <!--JQuery-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <!--Materialize JS-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>   
+      <!--<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>-->
+      <!--<script type="text/javascript" src="resources/materialize/js/materialize.min.js"></script>-->
+      <script>
+          $(document).ready(function(){
+            $('.collapsible').collapsible();
+          });
+      </script>
+
+  </body>
+  </html>
